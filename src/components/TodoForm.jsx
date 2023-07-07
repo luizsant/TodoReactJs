@@ -17,6 +17,7 @@ const TodoForm = ({ addTodo }) => {
       <div className="todo-input">
         <form onSubmit={handleSubmit}>
           <input
+            className="input-especial"
             type="text"
             placeholder="digite o título"
             value={value}

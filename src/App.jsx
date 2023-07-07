@@ -59,10 +59,16 @@ const App = () => {
   return (
     <>
       <div className="app">
+        <h1>Minha lista de tarefas</h1>
+        <hr />
         <TodoForm addTodo={addTodo} />
+        <hr />
         <Search search={search} setSearch={setSearch} />
+        <hr />
         <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
+        <hr />
         <h1>Lista de Tarefas</h1>
+        <hr />
         <div className="todo-lista">
           {todos
             .filter((todo) =>
