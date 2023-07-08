@@ -165,21 +165,50 @@ select,
   border-radius: 8px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 590px) {
   .app {
     max-width: 400px;
     padding: 40px;
   }
-  .todo-input input,
+  .todo {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btnCancel,
+  .btnComplete {
+    width: 100%;
+    margin: 1px;
+  }
+  .btnCancel {
+    border-bottom-left-radius: 10px;
+  }
+  .btnComplete {
+    border-top-right-radius: 10px;
+  }
+  .content {
+    text-align: center;
+    width: 100%;
+  }
+  /* .todo-input input,
   .todo-input select,
   .todo-input button {
     border-radius: 0;
+  } */
+  .btnLeft {
+    margin-bottom: 1px;
   }
   .search input {
     width: 100%;
   }
   .input-especial {
     width: calc(100% - 4px) !important;
+    border-top-right-radius: 10px;
   }
   select,
   .filter select {
@@ -195,6 +224,8 @@ select,
     width: 100%;
     cursor: pointer;
     margin-right: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .todo-input input {
     width: 100%;
